@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/body.less"],"names":[],"mappings":"AAAA,KACI,QAAA,EACA,OAAA,EACA,iBAAA,QACA,MAAA","file":"../main.css","sourcesContent":["body {\r\n    padding: 0;\r\n    margin: 0;\r\n    background-color: @bg-color-dark;\r\n    color: @border-color;\r\n}"]}
