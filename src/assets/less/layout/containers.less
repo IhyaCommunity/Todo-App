@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: @primary-font;
+    font-size: 1.4rem;
+    background-color: @bg-color-dark;
+    color: @border-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    
+    .narrow {
+        display: flex;
+        width: 60vw;
+    }
+
+    .header {
+        text-align: center;
+    }
+    
+    .main {
+        height: 55vh;
+    }
+
+    .footer {
+        width: 100%;
+        font-size: 1rem;
+        color: #888;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+    }
+}
+

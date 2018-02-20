@@ -1,2 +1,2 @@
-body{padding:0;margin:0;background-color:#3c3530;color:#f16b6f}
+body{padding:0;margin:0;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:1.4rem;background-color:#3c3530;color:#f16b6f;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center}.wrapper{display:-ms-flexbox;display:flex;width:80vw;-ms-flex-direction:column;flex-direction:column}.wrapper .narrow{display:-ms-flexbox;display:flex;width:60vw}.wrapper .header{text-align:center}.wrapper .main{height:55vh}.wrapper .footer{width:100%;font-size:1rem;color:#888;text-align:center;position:fixed;bottom:0;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
 /*# sourceMappingURL=maps/main.css.map */
