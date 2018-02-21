@@ -1,0 +1,58 @@
+.add-form {
+    display: flex;
+    justify-content: center;
+
+    input {
+        flex-grow: 1;
+        border: 1px solid @border-color;
+        color: @item-color;
+    }
+
+    button {
+        border: 1px solid @border-color;
+        cursor: pointer;
+        color: @item-color;
+        padding: .4rem;
+
+        svg {
+            display: inline-block;
+            width: 2.4rem;
+        }
+            
+        &:hover {
+            color: @bg-color-dark;
+            border-color: @item-color;
+            background-color: @item-color;
+        }
+    }
+}
+
+/* Larger than Mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than Phablet (Phone & Tablet) */
+@media (min-width: 550px) {
+    .add-form {
+        button {
+            padding: .8rem;
+        }
+    }
+}
+
+/* Larger than Tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than Desktop */
+@media (min-width: 1140px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1280px) {
+
+}
+
