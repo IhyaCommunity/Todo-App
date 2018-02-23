@@ -2,17 +2,19 @@
     display: flex;
     justify-content: center;
 
+
     input {
-        flex-grow: 1;
         border: 1px solid @border-color;
         color: @item-color;
+        padding: .4rem;
+        width: 80vw;
     }
 
     button {
         border: 1px solid @border-color;
         cursor: pointer;
         color: @item-color;
-        padding: .4rem;
+        padding: .2rem;
 
         svg {
             display: inline-block;
@@ -29,7 +31,14 @@
 
 /* Larger than Mobile */
 @media (min-width: 400px) {
+    input {
+        padding: .8rem;
+        flex-grow: 1;
+    }
 
+    button {
+        padding: .4rem;
+    }
 }
 
 /* Larger than Phablet (Phone & Tablet) */

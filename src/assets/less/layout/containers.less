@@ -1,85 +1,60 @@
 body {
-    padding: 0;
-    margin: 0;
     font-family: @primary-font;
-    font-size: 1.2rem;
-    background-color: @bg-color-dark;
-    color: @border-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    font-size: 1.3rem;
+    text-align: center;
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    
-    .main {
-        display: flex;
-        justify-content: center;
+    &.dark {
+        background-color: @bg-color-dark;
+        color: @bg-color-light;
     }
 
-    .narrow {
-        display: flex;
-        flex-direction: column;
+    &.light {
+        background-color: @bg-color-light;
+        color: @bg-color-dark;
     }
 
-    .header {
-        text-align: center;
-    }
-    
-    .main {
-        height: 55vh;
+    .wrapper {
+        width: 95vw;
+        margin: 0 auto;
     }
 
     .footer {
         width: 100%;
-        font-size: 1rem;
-        color: #888;
-        text-align: center;
+        font-size: 80%;
         position: fixed;
         bottom: 0;
-        align-self: center;
     }
-}
 
-/* Larger than Mobile */
-@media (min-width: 400px) {
-    .wrapper {
-        width: 94vw;
+    /* Larger than Mobile */
+    @media (min-width: 400px) {
 
-        .narrow {
+    }
+
+    /* Larger than Phablet (Phone & Tablet) */
+    @media (min-width: 550px) {
+        font-size: 1.4rem;
+
+        .wrapper {
             width: 90vw;
         }
     }
-}
 
-/* Larger than Phablet (Phone & Tablet) */
-@media (min-width: 550px) {
-    body {
-        font-size: 1.4rem;
+    /* Larger than Tablet */
+    @media (min-width: 750px) {
+        .wrapper {
+            width: 80vw;
+        }
     }
 
-    .wrapper {
-        width: 80vw;
-
-        .narrow {
+    /* Larger than Desktop */
+    @media (min-width: 1140px) {
+        .wrapper {
             width: 70vw;
         }
     }
-}
 
-/* Larger than Tablet */
-@media (min-width: 750px) {
+    /* Larger than Desktop HD */
+    @media (min-width: 1280px) {
 
-}
-
-/* Larger than Desktop */
-@media (min-width: 1140px) {
-
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1280px) {
-
+    }
 }
