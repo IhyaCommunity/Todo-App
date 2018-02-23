@@ -1,13 +1,13 @@
 .list {
     overflow-y: scroll;
+    height: 45vh;
+    margin-top: 1.2rem;
+    text-align: left;
 
     ul {
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
         list-style: none;
         padding: 0;
-        margin: 1.5rem 0 0 0;
+        margin: 0;
         
         li {
             color: @bg-color-dark;
@@ -15,6 +15,31 @@
             margin: .2rem;
             padding: .8rem;
         }
+    }
+
+    /* Larger than Mobile */
+    @media (min-width: 400px) {
+        height: 50vh
+    }
+
+    /* Larger than Phablet (Phone & Tablet) */
+    @media (min-width: 550px) {
+        height: 60vh;
+    }
+
+    /* Larger than Tablet */
+    @media (min-width: 750px) {
+
+    }
+
+    /* Larger than Desktop */
+    @media (min-width: 1140px) {
+
+    }
+
+    /* Larger than Desktop HD */
+    @media (min-width: 1280px) {
+
     }
 
 }

@@ -5,9 +5,17 @@
 
     input {
         border: 1px solid @border-color;
-        color: @item-color;
         padding: .4rem;
         width: 80vw;
+
+        .light & {
+            color: @bg-color-dark;
+        }
+
+        .dark & {
+            color: @item-color;
+        }
+
     }
 
     button {
@@ -20,10 +28,24 @@
             display: inline-block;
             width: 2.4rem;
         }
-            
-        &:hover {
+
+        .light & {
             color: @bg-color-dark;
+            border-color: @item-color-dark;
+        }
+
+        .dark & {
             border-color: @item-color;
+        }
+
+        .light &:hover {
+            color: @bg-color-dark;
+            background-color: @item-color;
+
+        }
+
+        .dark &:hover {
+            color: @bg-color-dark;
             background-color: @item-color;
         }
     }
