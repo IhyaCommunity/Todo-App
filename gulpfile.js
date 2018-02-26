@@ -7,6 +7,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const LessAutoprefix = require('less-plugin-autoprefix');
 const BrowserSync = require('browser-sync').create();
 
+const rename = require('gulp-rename');
+
 var autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
 
 var lessDir = 'src/assets/less/';
@@ -27,6 +29,7 @@ gulp.task('image-minify', () =>
 
 gulp.task('less', function () {
     gulp.src(lessDir + 'main.less')
+        .pipe(rename("main.min.css"))
         .pipe(sourcemaps.init())
         .pipe(less({
             plugins: [autoprefix, require('less-plugin-glob')]
