@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const less = require('gulp-less');
+const concat = require('gulp-concat');
 const cleanCss = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
@@ -30,8 +31,9 @@ gulp.task('image-minify', () =>
 
 gulp.task("js-minify", function(){
     gulp.src('src/assets/js/*.js')
-        .pipe(rename('script.min.js'))
         .pipe(sourcemaps.init())
+        .pipe(concat('script.min.js'))
+        // .pipe(rename('script.min.js'))
         .pipe(jsmin())
         .pipe(sourcemaps.write('/maps'))
         .pipe(gulp.dest('dist/assets/js/'))
