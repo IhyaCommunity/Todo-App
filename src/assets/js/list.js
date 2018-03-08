@@ -4,6 +4,14 @@
 
     var listInput = document.getElementById("add-input");
 
+    listInput.onfocus = function(){
+        this.removeAttribute("placeholder");
+    }
+    
+    listInput.onblur = function(){
+        this.placeholder = "Write Your Task Here!";
+    }
+
     document.getElementById('add-button').addEventListener('click', (e) => {
     
         addItem();
@@ -17,6 +25,7 @@
         if (e.key == 'Enter') {
             addItem();
             listInput.value = null;
+            listInput.placeholder = "Write Your Task Here!";
         }
     
         return false;
